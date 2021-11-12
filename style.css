@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Hellix";
+  src: url("https://assets.codepen.io/6060109/Hellix-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("https://assets.codepen.io/6060109/Hellix-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("https://assets.codepen.io/6060109/Hellix-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("https://assets.codepen.io/6060109/Hellix-Thin.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("https://assets.codepen.io/6060109/Hellix-Bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("https://assets.codepen.io/6060109/Hellix-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("https://assets.codepen.io/6060109/Hellix-Black.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("https://assets.codepen.io/6060109/Hellix-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  font-family: "Hellix", sans-serif;
+}
+
+.container {
+  margin: 15px;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+p {
+  color: #111235;
+}
+
+/* Menu Bar */
+
+.menu-bar {
+  height: 75px;
+  width: 100%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* Main Section */
+
+.main {
+  text-align: center;
+}
+
+.workout-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-section-img {
+  margin-top: 75px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 500;
+  margin: 40px 26px 20px;
+}
+
+.btn {
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.5 ease all;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transition: 0.5 ease all;
+  cursor: pointer;
+}
+
+.btn-purple {
+  background-color: #4b5092;
+  color: white;
+}
