@@ -123,6 +123,10 @@ h4 {
   align-items: center;
 }
 
+.menu-bar-links {
+  display: none;
+}
+
 h3 {
   font-size: 36px;
 }
@@ -220,6 +224,7 @@ h1 {
 
 .benefits h2 {
   margin-bottom: 40px;
+  margin-left: 15px;
 }
 
 .benefits h4 {
@@ -338,4 +343,172 @@ input {
   font-weight: 500;
   margin-top: 60px;
   margin-bottom: 100px;
+}
+
+/* Desktop Version */
+
+@media only screen and (min-width: 768px) {
+  /* body {
+    padding: 27px 64px 80px 135px;
+  } */
+
+  .container {
+    margin: 0;
+  }
+
+  /* Menu Bar */
+
+  .menu-bar {
+    justify-content: space-between;
+    box-shadow: none;
+    padding: 27px 150px 0 135px;
+  }
+
+  .menu-bar-links {
+    display: flex;
+  }
+
+  .menu-bar-links img {
+    margin-left: 55px;
+  }
+
+  .menu-bar-links p {
+    margin-right: 45px;
+  }
+
+  /* Main Section */
+
+  .main {
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-left: 135px;
+    padding-right: 64px;
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .main .btn-purple {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  /* About Section */
+
+  .about {
+    display: flex;
+    padding-left: 135px;
+    padding-right: 100px;
+  }
+
+  .blue-bg {
+    padding: 45px;
+    border-radius: 50px;
+  }
+
+  .blue-bg h2 {
+    padding-top: 10px;
+  }
+
+  /* Personal Trainer Section */
+  .personal-trainer {
+    padding-left: 135px;
+    padding-right: 100px;
+    text-align: left;
+  }
+
+  .personal-trainer .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .personal-trainer h2 {
+    padding-top: 0;
+  }
+
+  .personal-trainer img {
+    width: 50%;
+  }
+
+  .personal-trainer-info {
+    padding-left: 50px;
+    width: 50%;
+  }
+
+  .btn-white {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  /* Benefits section */
+
+  .benefits {
+    padding-left: 135px;
+    padding-right: 84px;
+    position: relative;
+  }
+
+  .benefits .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    grid-column-gap: 12px;
+  }
+
+  .card {
+    padding-top: 30px;
+  }
+
+  .get-now-btn {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 84px;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 0 80px 94px 135px;
+    text-align: left;
+  }
+
+  .separation {
+    width: 100%;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+  }
+
+  .email-form {
+    width: 30%;
+  }
+
+  input {
+    width: 100%;
+    margin-left: -8px;
+  }
+
+  .social-icons {
+    display: none;
+  }
 }
