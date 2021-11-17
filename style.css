@@ -234,10 +234,12 @@ h1 {
 
 .card {
   width: 100%;
-  height: 250px;
+  height: 200px;
   border-radius: 30px;
   padding: 50px 40px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .blue-card {
@@ -345,7 +347,7 @@ input {
   margin-bottom: 100px;
 }
 
-/* Desktop Version */
+/* Tablet Version */
 
 @media only screen and (min-width: 768px) {
   /* body {
@@ -356,12 +358,17 @@ input {
     margin: 0;
   }
 
+  .workout-img {
+    max-width: 50%;
+  }
+
   /* Menu Bar */
 
   .menu-bar {
     justify-content: space-between;
     box-shadow: none;
-    padding: 27px 150px 0 135px;
+    padding: 27px 60px 0;
+    margin-bottom: 100px;
   }
 
   .menu-bar-links {
@@ -383,8 +390,8 @@ input {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding-left: 135px;
-    padding-right: 64px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   h1 {
@@ -401,13 +408,14 @@ input {
 
   .about {
     display: flex;
-    padding-left: 135px;
-    padding-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .blue-bg {
-    padding: 45px;
+    padding: 25px;
     border-radius: 50px;
+    height: 100%;
   }
 
   .blue-bg h2 {
@@ -416,23 +424,19 @@ input {
 
   /* Personal Trainer Section */
   .personal-trainer {
-    padding-left: 135px;
-    padding-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
     text-align: left;
   }
 
   .personal-trainer .container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: row-reverse;
   }
 
   .personal-trainer h2 {
-    padding-top: 0;
-  }
-
-  .personal-trainer img {
-    width: 50%;
+    padding-top: 10px;
   }
 
   .personal-trainer-info {
@@ -441,39 +445,15 @@ input {
   }
 
   .btn-white {
-    margin: 0;
-    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   /* Benefits section */
 
   .benefits {
-    padding-left: 135px;
-    padding-right: 84px;
+    padding-left: 80px;
+    padding-right: 80px;
     position: relative;
-  }
-
-  .benefits .container {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: auto auto;
-    grid-column-gap: 12px;
-  }
-
-  .card {
-    padding-top: 30px;
-  }
-
-  .get-now-btn {
-    position: absolute;
-    margin: 0;
-    top: 0;
-    right: 84px;
   }
 
   /* Footer */
@@ -510,5 +490,78 @@ input {
 
   .social-icons {
     display: none;
+  }
+}
+
+/* Desktop Version */
+
+@media only screen and (min-width: 992px) {
+  /* Menu Bar */
+
+  .menu-bar {
+    padding: 27px 150px 0 135px;
+  }
+
+  /* Main Section */
+
+  .main {
+    padding-left: 135px;
+    padding-right: 64px;
+  }
+
+  /* About Section */
+
+  .about {
+    padding-left: 135px;
+    padding-right: 100px;
+  }
+
+  /* Personal Trainer Section */
+
+  .personal-trainer {
+    padding-left: 135px;
+    padding-right: 100px;
+  }
+
+  .personal-trainer .container {
+    align-items: center;
+  }
+
+  /* Benefits Section */
+
+  .benefits {
+    padding-left: 135px;
+    padding-right: 84px;
+  }
+
+  .benefits .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .benefits .workout-img {
+    height: 50%;
+    margin: auto 0;
+  }
+
+  .get-now-btn {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 84px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row: auto auto;
+      grid-column-gap: 12px;
+    }
+
+    .card {
+      padding: 30px;
+      height: 300px;
+    }
   }
 }
